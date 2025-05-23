@@ -1,0 +1,85 @@
+.header {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 50px;
+  padding-top: 10px;
+}
+
+.turnDisplayer {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: white;
+  height: 50px;
+}
+
+.content {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.gridSquare {
+  background-color: white;
+  height: 150px;
+  border: 3px solid rgb(66, 64, 64);
+}
+
+.gridButton {
+  cursor: pointer;
+  text-align: center;
+  align-content: center;
+  font-size: 100px;
+  color: rgb(66, 64, 64);
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    grid-template-columns: 100px 100px 100px;
+  }
+  .gridSquare {
+    height: 100px;
+  }
+  .gridButton {
+    font-size: 50px;
+  }
+}
+
+.win {
+  color: rgb(242, 242, 93);
+  animation: flash 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes flash {
+  0% {
+    color: gold;
+    font-size: 41px;
+  }
+  100% {
+    color: orange;
+    font-size: 40px;
+  }
+}
+
+.highlight {
+  background-color: rgb(37, 143, 229);
+}
+
+.resetButtonDiv {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
